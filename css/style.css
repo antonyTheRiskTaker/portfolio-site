@@ -90,7 +90,9 @@ strong { font-weight: var(--fw-bold); }
 }
 
 .btn:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
+  background: var(--clr-dark);
+  color: var(--clr-accent);
 }
 
 /* (Lines below) typography */
@@ -462,9 +464,13 @@ header {
 /* Individual portfolio item styles */
 
 .portfolio-item-individual {
+  position: relative;
   padding: 0 2em 2em;
   max-width: 1000px;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfolio-item-individual p {
@@ -472,3 +478,9 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+
+.portfolio-item-individual a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+} 
