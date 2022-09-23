@@ -464,7 +464,8 @@ header {
 /* Individual portfolio item styles */
 
 .portfolio-item-individual {
-  position: relative;
+  /* (Line below) it's removed because the style rules for the portfolio item buttons are disabled */
+  /* position: relative; */
   padding: 0 2em 2em;
   max-width: 1000px;
   margin-top: 0;
@@ -479,8 +480,13 @@ header {
   margin-right: auto;
 }
 
-.portfolio-item-individual a {
+.portfolio-item-individual .btn-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* .portfolio-item-individual a {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-} 
+}  */
